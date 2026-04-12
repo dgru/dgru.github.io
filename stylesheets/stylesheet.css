@@ -587,3 +587,20 @@ a:focus {
   box-shadow: none;       /* remove shadow */
   padding: 0;             /* remove inherited padding */
 }
+
+/* Two-column CV layout */
+.cv-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.cv-year {
+  font-weight: 700;
+  color: #555;
+}
+
+.cv-details {
+  line-height: 1.5;
+}
