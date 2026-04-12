@@ -361,3 +361,104 @@ Small Device Styles
     font-size: 11px;
   }
 }
+
+
+#header_wrap .inner {
+  padding: 42px 10px 26px 10px;
+}
+
+#project_title {
+  margin: 0 0 6px 0;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+#project_tagline {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  opacity: 0.95;
+  background: none;
+  text-shadow: #111 0px 0px 10px;
+}
+
+.inner {
+  max-width: 700px;
+}
+
+#main_content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  padding-bottom: 4px;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #ddd;
+}
+
+p {
+  line-height: 1.65;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* Keep the headshot a little cleaner and proportional */
+#main_content img {
+  width: 260px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* Slightly improve link appearance */
+a {
+  color: #0b63c9;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Footer icon row spacing */
+#footer_wrap .inner {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* Mobile polish */
+@media screen and (max-width: 480px) {
+  #project_title {
+    font-size: 30px;
+  }
+
+  #project_tagline {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .inner {
+    max-width: 480px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  #main_content img {
+    width: 220px;
+  }
+
+  h4 {
+    margin-top: 24px;
+  }
+}
