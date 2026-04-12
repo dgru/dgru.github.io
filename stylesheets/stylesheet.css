@@ -604,3 +604,9 @@ a:focus {
 .cv-details {
   line-height: 1.5;
 }
+
+.tagline-sub {
+  display: block;   /* forces new line */
+  font-weight: 500;
+  opacity: 0.85;
+}
