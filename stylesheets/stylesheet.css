@@ -520,3 +520,70 @@ a:focus {
     font-size: 14px;
   }
 }
+
+/* Layout: photo left, text right */
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Photo: larger, NO circle */
+.header-photo {
+  width: 140px;
+  height: auto;
+  border-radius: 0;   /* removes circle */
+  object-fit: cover;
+}
+
+/* Name: slightly smaller than before */
+#project_title {
+  font-size: 32px;
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+/* Tagline: clean + secondary */
+#project_tagline {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* Optional: tighten header spacing */
+#header_wrap .inner {
+  padding: 40px 10px 25px 10px;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-photo {
+    width: 110px;
+  }
+
+  #project_title {
+    font-size: 26px;
+  }
+
+  #project_tagline {
+    font-size: 14px;
+  }
+}
+
+.header-photo {
+  width: 140px;
+  height: 140px;          /* ensure perfect circle */
+  border-radius: 50%;     /* makes it circular */
+  object-fit: cover;
+
+  border: none;           /* remove border */
+  box-shadow: none;       /* remove shadow */
+  padding: 0;             /* remove inherited padding */
+}
