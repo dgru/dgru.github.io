@@ -471,3 +471,33 @@ a:focus {
   opacity: 0.85;   /* softens it slightly */
   letter-spacing: 0.5px;
 }
+
+/* Header layout with photo */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Photo styling */
+.header-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+/* Make it stack nicely on mobile */
+@media screen and (max-width: 480px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-photo {
+    margin: 15px 0 0 0;
+    width: 100px;
+    height: 100px;
+  }
+}
