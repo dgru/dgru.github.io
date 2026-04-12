@@ -362,6 +362,7 @@ Small Device Styles
   }
 }
 
+/* ===== new changes 2026 ===== */
 
 #header_wrap .inner {
   padding: 42px 10px 26px 10px;
@@ -413,7 +414,6 @@ img {
   border-radius: 10px;
 }
 
-/* Keep the headshot a little cleaner and proportional */
 #main_content img {
   width: 260px;
   height: auto;
@@ -461,4 +461,13 @@ a:focus {
   h4 {
     margin-top: 24px;
   }
+}
+
+#project_title {
+  margin-bottom: 4px;
+}
+
+#project_tagline {
+  opacity: 0.85;   /* softens it slightly */
+  letter-spacing: 0.5px;
 }
