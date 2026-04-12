@@ -1,0 +1,482 @@
+/*******************************************************************************
+Danielle Gruen website stylesheet
+Base theme adapted from Slate Theme for GitHub Pages
+Customizations cleaned and consolidated
+*******************************************************************************/
+
+@import url(normalize.css);
+@import url(pygment_trac.css);
+
+/*******************************************************************************
+1. Base / reset
+*******************************************************************************/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #373737;
+  background: #212121;
+  font-size: 18px;
+  font-family: "Myriad Pro", Calibri, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*******************************************************************************
+2. Typography
+*******************************************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  color: #222222;
+  font-family: "Lucida Grande", "Calibri", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+  padding-bottom: 10px;
+  background: url("../images/bg_hr.png") repeat-x bottom;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #ddd;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  margin: 10px 0 15px 0;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+footer p {
+  color: #f2f2f2;
+}
+
+/*******************************************************************************
+3. Links / emphasis
+*******************************************************************************/
+
+a {
+  color: #0b63c9;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+footer a {
+  color: #f2f2f2;
+  text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/*******************************************************************************
+4. Images / media
+*******************************************************************************/
+
+/* Default image styling from theme */
+img {
+  position: relative;
+  max-width: 739px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ebebeb;
+}
+
+/* Inline images inside paragraphs should not get framed */
+p img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+}
+
+/*******************************************************************************
+5. Code / preformatted text
+*******************************************************************************/
+
+pre,
+code {
+  width: 100%;
+  color: #222;
+  background-color: #fff;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 14px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+  padding: 10px;
+  overflow: auto;
+}
+
+code {
+  margin: 0 3px;
+  padding: 3px;
+}
+
+pre code {
+  display: block;
+  box-shadow: none;
+}
+
+/*******************************************************************************
+6. Common content elements
+*******************************************************************************/
+
+blockquote {
+  color: #666;
+  margin: 0 0 20px 2px;
+  padding-left: 20px;
+  border-left: 3px solid #bbb;
+  font-style: italic;
+}
+
+ul,
+ol,
+dl {
+  margin: 0 0 15px 0;
+  padding-left: 20px;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dl dd {
+  margin-left: 0;
+  padding-left: 0;
+  font-style: italic;
+}
+
+dl p {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+hr {
+  height: 1px;
+  margin-bottom: 5px;
+  border: none;
+  background: url("../images/bg_hr.png") repeat-x center;
+}
+
+table {
+  margin-bottom: 20px;
+  border: 1px solid #373737;
+  text-align: left;
+}
+
+th {
+  padding: 10px;
+  background: #373737;
+  color: #fff;
+  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #373737;
+}
+
+form {
+  padding: 20px;
+  background: #f2f2f2;
+}
+
+/*******************************************************************************
+7. Page layout
+*******************************************************************************/
+
+.outer {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+/*******************************************************************************
+8. Optional GitHub theme elements
+Remove these later if you are not using them
+*******************************************************************************/
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  font-weight: 700;
+  background: url("../images/blacktocat.png") #0090ff no-repeat 95% 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#downloads,
+.zip_download_link,
+.tar_download_link {
+  display: none;
+}
+
+/*******************************************************************************
+9. Header
+*******************************************************************************/
+
+/* Old theme header wrapper; still useful if present in HTML */
+#header_wrap {
+  background: #212121;
+}
+
+#header_wrap .inner {
+  padding: 40px 10px 25px 10px;
+}
+
+/* New custom header layout: photo left, text right */
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+/* Circular headshot in header */
+.header-photo {
+  width: 140px;
+  height: 140px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: none;
+  flex-shrink: 0;
+}
+
+/* Name styling */
+#project_title {
+  margin: 0 0 5px 0;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1.2;
+  text-shadow: #111 0 0 10px;
+}
+
+/* Tagline styling */
+#project_tagline {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  background: none;
+  text-shadow: #111 0 0 10px;
+}
+
+/* Use this if you wrap the second line of the tagline in a span */
+.tagline-sub {
+  display: block;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+/*******************************************************************************
+10. Main content / footer
+*******************************************************************************/
+
+#main_content_wrap {
+  background: #f2f2f2;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+
+#main_content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* General content images inside main body */
+#main_content img {
+  display: block;
+  width: 260px;
+  height: auto;
+  margin: 0 auto 20px auto;
+}
+
+#footer_wrap {
+  background: #212121;
+}
+
+#footer_wrap .inner {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/*******************************************************************************
+11. Training section
+*******************************************************************************/
+
+/* Two-column layout: year on left, details on right */
+.cv-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  column-gap: 18px;
+  margin-bottom: 22px;
+  align-items: start;
+}
+
+/* Year column should be visible but not louder than the degree */
+.cv-year {
+  padding-top: 2px;
+  color: #777;
+  font-weight: 600;
+}
+
+/* Degree line should stand out most */
+.cv-degree {
+  margin-bottom: 6px;
+  font-size: 1.02em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Supporting lines under the degree */
+.cv-sub {
+  color: #444;
+  font-size: 0.96em;
+  line-height: 1.45;
+}
+
+/*******************************************************************************
+12. Mobile styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  #project_title {
+    font-size: 26px;
+  }
+
+  #project_tagline {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    margin-top: 24px;
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  code,
+  pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+
+  #main_content img {
+    width: 220px;
+  }
+
+  .cv-item {
+    grid-template-columns: 60px 1fr;
+    column-gap: 12px;
+  }
+}
