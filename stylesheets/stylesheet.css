@@ -376,7 +376,7 @@ Remove these later if you are not using them
 /* Two-column layout: year on left, details on right */
 .cv-item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 70px 1fr;
   column-gap: 16px;
   margin-bottom: 22px;
   align-items: start;
