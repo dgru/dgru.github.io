@@ -399,8 +399,8 @@ Remove these later if you are not using them
 
 /* Supporting lines under the degree */
 .cv-sub {
-  color: #555;
-  font-size: 0.95em;
+  color: #444;
+  font-size: 0.96em;
   line-height: 1.45;
 }
 
