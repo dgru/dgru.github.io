@@ -377,7 +377,7 @@ Remove these later if you are not using them
 .cv-item {
   display: grid;
   grid-template-columns: 90px 1fr;
-  column-gap: 18px;
+  column-gap: 16px;
   margin-bottom: 22px;
   align-items: start;
 }
