@@ -480,3 +480,11 @@ Remove these later if you are not using them
     column-gap: 12px;
   }
 }
+
+.header-text {
+  min-width: 0;
+}
+
+footer {
+  text-align: center;
+}
